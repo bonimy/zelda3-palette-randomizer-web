@@ -11,5 +11,34 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "esm": "^3.2.25"
-  }
+  },
+  "description": "Randomize palettes in The Legend of Zelda: A Link to the Past.",
+  "license": "LGPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maseya/z3pr-js.git"
+  },
+  "homepage": "https://github.com/Maseya/z3pr-js#readme.md",
+  "bugs": {
+    "url": "https://github.com/Maseya/z3pr-js/issues"
+  },
+  "author": "Nelson Garcia <swr.ngarcia@gmail.com> (https://github.com/bonimy)",
+  "contributors": [
+    "Rebelus Quo <rebelusquo@tutanota.com>"
+  ],
+  "keywords": [
+    "legend of zelda",
+    "link to the past",
+    "loz",
+    "lttp",
+    "alttp",
+    "alttpr",
+    "palette",
+    "randomizer",
+    "rom hacking",
+    "snes",
+    "super nes",
+    "super",
+    "nintendo"
+  ]
 }
