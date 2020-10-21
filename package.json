@@ -1,17 +1,36 @@
 {
-  "name": "z3pr",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@maseya/z3pr",
+  "version": "1.0.0",
   "scripts": {
-    "test": "mocha -r esm \"./spec/**/*_spec.js\""
+    "test": "mocha -r esm \"./spec/**/*_spec.js\"",
+    "build": "browserify -d -s z3pr -t babelify -p tinyify src/index.js | exorcist dist/z3pr-umd.map.js > dist/z3pr-umd.js"
   },
   "dependencies": {
     "lodash": "^4.17.20"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
     "chai": "^4.2.0",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "exorcist": "^1.0.1",
+    "tinyify": "^3.0.0"
   },
+  "main": "src/index.js",
+  "files": [
+    "src/**",
+    "*.md"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
   "description": "Randomize palettes in The Legend of Zelda: A Link to the Past.",
   "license": "LGPL-3.0+",
   "repository": {
