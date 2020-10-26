@@ -1,5 +1,5 @@
 {
-  "name": "@maseya/z3pr",
+  "name": "@maseya/z3pr-umd",
   "version": "1.0.0",
   "scripts": {
     "test": "mocha -r esm \"./spec/**/*_spec.js\"",
@@ -18,9 +18,9 @@
     "exorcist": "^1.0.1",
     "tinyify": "^3.0.0"
   },
-  "main": "src/index.js",
+  "main": "dist/z3pr-umd.js",
   "files": [
-    "src/**",
+    "dist/*.js",
     "*.md"
   ],
   "babel": {
